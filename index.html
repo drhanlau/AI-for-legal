@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Agentic Automation for Lawyers. A 4-hour live webinar to help you save time, cost, and hassle. Learn to automate your practice and save 1 headcount.">
+  <meta name="keywords" content="AI for lawyers, legal tech, legal automation, AI webinar for lawyers, law firm productivity, agentic automation">
+  <meta name="author" content="theLead.io">
+  <title>AI Agentic Automation for Lawyers | Save Time & Cost</title>
+  
+  <!-- Favicons (from original) --><link rel="icon" href="https://thelead.io/wp-content/uploads/2020/04/cropped-lead-favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://thelead.io/wp-content/uploads/2020/04/cropped-lead-favicon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://thelead.io/wp-content/uploads/2020/04/cropped-lead-favicon-192x192.png" />
+
+  <!-- Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons --><script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom styles from original */
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #f9fafb; /* bg-gray-50 */
+    }
+    .card-hover {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+    .sticky-nav-padding {
+        padding-top: 72px;
+    }
+    .bg-gradient-yellow {
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+        --tw-gradient-from: #f59e0b; /* amber-500 */
+        --tw-gradient-to: #facc15;   /* yellow-400 */
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    .header-bg {
+        background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('https://r5.whjr.online/rsrc/images/C5603AQFc1G5Wdc5aMw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516971192949?e=1762992000&v=beta&t=ei2rvSZbEWLCvlw3XxPVKkLiibNVg5tdpQ5KjbDDR1I');
+        background-size: cover;
+        background-position: center;
+    }
+    /* Accordion styles */
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    .bg-custom-blue {
+        background-color: #111827; /* Changed from #0D54D1 */
+    }
+    .bg-custom-blue-nav {
+        background-color: rgb(17 24 39 / 0.8); /* Changed from rgb(13 84 209 / 0.8) */
+    }
+
+    /* --- New Marquee Styles --- */
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); } /* Scroll one half of the total width */
+    }
+    .marquee-container {
+      background-color: #facc15; /* yellow-400 */
+      color: #111827; /* gray-900 */
+      overflow: hidden;
+      white-space: nowrap;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .marquee-content {
+      display: flex;
+      width: fit-content; /* Let it be as wide as its content */
+      padding: 0.75rem 0; /* py-3 */
+      font-weight: 600;
+      animation: scroll 20s linear infinite;
+    }
+    .marquee-content span {
+       white-space: nowrap;
+       padding: 0 2rem; /* px-8 */
+       flex-shrink: 0;
+    }
+    /* --- End of New Marquee Styles --- */
+
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation Bar --><nav id="navbar" class="bg-custom-blue-nav backdrop-blur-md text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center h-16">
+            <a href="https://www.thelead.io" target="_blank" rel="noopener noreferrer">
+              <img src="https://thelead.io/wp-content/uploads/2019/11/lead-white-logo.png" alt="theLead.io Logo" class="h-8 w-auto">
+            </a>
+            <!-- Desktop Menu --><div class="hidden md:flex items-center space-x-6">
+                <a href="#dates" class="hover:text-amber-300 transition-colors">Date & Price</a>
+                <a href="#syllabus" class="hover:text-amber-300 transition-colors">Syllabus</a>
+                <a href="#trainers" class="hover:text-amber-300 transition-colors">Trainers</a>
+                <a href="#faq" class="hover:text-amber-300 transition-colors">FAQ</a>
+                <a href="https://forms.gle/Vy2CzoxT5Bz8cf569" target="_blank" rel="noopener noreferrer" class="bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-md font-semibold transition-all">Register Now</a>
+            </div>
+            <!-- Mobile Menu Button --><div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu --><div id="mobile-menu" class="hidden md:hidden bg-custom-blue px-6 pb-4 space-y-2">
+        <a href="#dates" class="block hover:text-amber-300 transition-colors py-2">Date & Price</a>
+        <a href="#syllabus" class="block hover:text-amber-300 transition-colors py-2">Syllabus</a>
+        <a href="#trainers" class="block hover:text-amber-300 transition-colors py-2">Trainers</a>
+        <a href="#faq" class="block hover:text-amber-300 transition-colors py-2">FAQ</a>
+        <a href="https://forms.gle/Vy2CzoxT5Bz8cf569" target="_blank" rel="noopener noreferrer" class="block bg-amber-500 hover:bg-amber-600 text-gray-900 px-4 py-2 rounded-md font-semibold transition-all text-center mt-2">Register Now</a>
+    </div>
+  </nav>
+
+  <!-- Header Section --><header class="header-bg text-white pt-32 pb-20 md:pt-40 md:pb-28">
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">
+        AI Agentic Automation Training for Lawyers
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+        Saturday, 13 December (8:30am KL). Save Time. Save Cost. Save Hassle. Learn How to Automate Your Practice in Our 4-Hour Live Webinar and Save 1 Headcount. Guaranteed.
+      </p>
+      <!-- ADDED VALUE MESSAGE -->
+      <p class="text-2xl font-bold text-amber-400 mb-8">
+    $2,000+ Value for only <span id="price-display-header">...</span>
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://forms.gle/Vy2CzoxT5Bz8cf569" target="_blank" rel="noopener noreferrer" class="inline-block w-full sm:w-auto bg-gradient-yellow text-gray-900 font-bold text-lg px-10 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+          Book Your Seat Now
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- New Moving Ribbon -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span>Limited seats only, Early bird is RM350 for first 100 tickets.HRDC-claimable</span>
+      <span>Limited seats only, Early bird is RM350 for first 100 tickets. HRDC-claimable</span>
+      <!-- Add duplicates for seamless loop -->
+      <span>Limited seats only, Early bird is RM350 for first 100 tickets. HRDC-claimable</span>
+      <span>Limited seats only, Early bird is RM350 for first 100 tickets.</span>
+    </div>
+  </div>
+  
+  <main class="bg-gray-50">
+    <div class="container mx-auto px-6 py-12 md:py-20">
+    
+      <!-- Date & Price Section (REMOVED) -->
+
+      <!-- Trusted By Section (Original) --><section id="trusted-by" class="bg-gray-100 -mx-6 px-6 py-12 mb-16 text-center">
+        <h3 class="text-gray-600 text-sm font-bold uppercase tracking-wider mb-8">Trusted by industry leaders</h3>
+        <div class="flex justify-center">
+            <img src="https://raw.githubusercontent.com/drhanlau/n8n-course/main/Corporate%20clients.png" alt="Corporate Client Logos" class="max-w-4xl w-full h-auto">
+        </div>
+      </section>
+
+      <!-- Course Details Section --><section id="other-details" class="mb-16">
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 flex items-center gap-4">
+                <i data-lucide="monitor-play" class="w-12 h-12 text-amber-500 flex-shrink-0"></i>
+                <div>
+                    <h3 class="text-xl font-semibold mb-1">Format & Duration</h3>
+                    <p class="text-gray-600">4-Hour Live Online Webinar</p>
+                    <p class="font-semibold text-amber-600">Join from anywhere in the world.</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 flex items-center gap-4">
+                <i data-lucide="archive" class="w-12 h-12 text-amber-500 flex-shrink-0"></i>
+                <div>
+                    <h3 class="text-xl font-semibold mb-1">What You Get</h3>
+                    <p class="text-gray-600">Live Training + Course Materials + 3 AI Automation Workflows (Zipped File).</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- 3 Workflows Section --><section id="workflows" class="mb-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Unlock These 3 Essential AI Workflows</h2>
+            <p class="text-gray-600 mt-2">Ready-to-use automations that will transform your legal practice.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 text-center card-hover">
+                <i data-lucide="user-plus" class="w-16 h-16 text-amber-500 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Client-Onboarding Automation</h3>
+                <p class="text-gray-600">Automate the entire client intake process, from initial contact to document collection and conflict checks, ensuring a smooth and error-free start.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 text-center card-hover">
+                <i data-lucide="message-square-more" class="w-16 h-16 text-amber-500 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Automated Client Follow-ups</h3>
+                <p class="text-gray-600">Set up intelligent systems to send timely reminders, status updates, and requests to clients, reducing manual effort and improving client satisfaction.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 text-center card-hover">
+                <i data-lucide="file-search" class="w-16 h-16 text-amber-500 mx-auto mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">AI-Powered Legal Research</h3>
+                <p class="text-gray-600">Leverage AI agents to conduct deep legal research, summarize case law, identify relevant precedents, and extract key information in a fraction of the time.</p>
+            </div>
+        </div>
+      </section>
+
+      <div class="grid lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-2 space-y-12">
+
+          <!-- Who Should Attend Section --><section id="who-should-attend" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover">
+             <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-2xl font-bold mb-6 flex items-center"><i data-lucide="gavel" class="w-7 h-7 mr-3 text-amber-500"></i>Who Should Attend</h2>
+                    <p class="mb-4 text-gray-600">This webinar is tailored for legal professionals, including:</p>
+                    <ul class="space-y-3">
+                      <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-green-500 mt-1 flex-shrink-0"></i><span><strong>Law Firm Partners & Owners</strong> looking to boost profitability.</span></li>
+                      <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-green-500 mt-1 flex-shrink-0"></i><span><strong>Solo Practitioners & Associates</strong> who want to reduce admin work.</span></li>
+                      <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-green-500 mt-1 flex-shrink-0"></i><span><strong>Paralegals & Legal Support Staff</strong> aiming to increase efficiency.</span></li>
+                       <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-3 text-green-500 mt-1 flex-shrink-0"></i><span>Any legal professional tired of repetitive, manual tasks.</span></li>
+                    </ul>
+                </div>
+                <div class="hidden md:block">
+                    <!-- Original Image --><img src="https://thelead.io/wp-content/uploads/2020/07/Web-development-illustration-1march-july-06.png" alt="Professionals learning" class="rounded-lg">
+                </div>
+             </div>
+          </section>
+
+          <!-- Syllabus Section --><section id="syllabus" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover">
+              <h2 class="text-2xl font-bold mb-6 flex items-center"><i data-lucide="book-open-check" class="w-7 h-7 mr-3 text-amber-500"></i>Webinar Syllabus (4 Hours)</h2>
+              <div class="space-y-6">
+                  <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg">
+                      <h3 class="font-bold text-lg text-amber-800 mb-2">A 4-Hour, High-Impact Live Session</h3>
+                      <p class="text-gray-700 mb-4">This webinar (including breaks) gives you actionable AI strategies you can use immediately.</p>
+                      <ul class="list-disc list-inside text-gray-700 space-y-2">
+                          <li><strong>Introduction to AI in Law:</strong> What's possible beyond just research tools.</li>
+                          <li><strong>Identifying Automation Opportunities:</strong> How to find high-impact, time-saving tasks in your firm.</li>
+                          <li><strong>Hands-on: Building Your First Workflow:</strong> A live, guided session to build a practical legal automation.</li>
+                          <li><strong>The 3 Core Workflows:</strong> A deep dive into the 3 pre-built workflows you'll receive (client intake, document summarization, automated follow-ups).</li>
+                          <li><strong>Implementation & Scaling:</strong> How to deploy these workflows and save a guaranteed 1 headcount.</li>
+                      </ul>
+                  </div>
+              </div>
+          </section>
+          
+          <!-- Trainers Section (Original) --><section id="trainers" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover">
+              <h2 class="text-2xl font-bold mb-6 flex items-center"><i data-lucide="graduation-cap" class="w-7 h-7 mr-3 text-amber-500"></i>Your Expert Trainers</h2>
+              <div class="space-y-8">
+                  <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                      <img src="https://pbs.twimg.com/profile_images/738570826291646464/EEH1StZS_400x400.jpg" alt="Dr. Lau Cher Han" class="rounded-full w-24 h-24 border-4 border-gray-200 object-cover flex-shrink-0">
+                      <div>
+                          <h3 class="font-semibold text-xl text-center sm:text-left text-gray-800">Dr. Lau Cher Han</h3>
+                          <p class="text-gray-600 text-center sm:text-left">Chief Data Scientist, national AI advisor, and expert trainer in data science and automation.</p>
+                      </div>
+                  </div>
+                  <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                      <img src="https://www.kosmo.com.my/wp-content/uploads/2025/03/Warren_Leow.jpg123-1024x768.jpg" alt="Warren Leow" class="rounded-full w-24 h-24 border-4 border-gray-200 object-cover flex-shrink-0">
+                      <div>
+                          <h3 class="font-semibold text-xl text-center sm:text-left text-gray-800">Warren Leow</h3>
+                          <p class="text-gray-600 text-center sm:text-left">Founder of Supern8n, Co-founder of KAIN, and advisor to MED4IRN, with deep experience in scaling AI across industries.</p>
+                      </div>
+                  </div>
+                  <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                      <img src="https://media.licdn.com/dms/image/C5603AQFc1G5Wdc5aMw/profile-displayphoto-shrink_800_800/0/1516971192949?e=1701830400&v=beta&t=ei2rvSZbEWLCvlw3XxPVKkLiibNVg5tdpQ5KjbDDR1I" alt="Clarice Ngan" class="rounded-full w-24 h-24 border-4 border-gray-200 object-cover flex-shrink-0">
+                      <div>
+                          <h3 class="font-semibold text-xl text-center sm:text-left text-gray-800">Clarice Ngan</h3>
+                          <p class="text-gray-600 text-center sm:text-left">Lawyer at Carro. Legal tech advocate with experience in process automation for legal operations.</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Testimonials Section (Original) --><section id="testimonials" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover relative">
+            <i data-lucide="quote" class="absolute top-4 right-4 w-16 h-16 text-gray-100"></i>
+            <h2 class="text-2xl font-bold mb-6 flex items-center">What Others Are Saying</h2>
+            <div class="space-y-6">
+              <blockquote class="bg-gray-100 p-6 rounded-lg border-l-4 border-gray-300">
+                <p class="text-gray-600 italic mb-3">"We automated our entire client intake process after this webinar. It's saved our associates hours of admin work every single week."</p>
+                <cite class="font-semibold text-gray-700 not-italic">– Sarah L., Managing Partner</cite>
+              </blockquote>
+              <blockquote class="bg-gray-100 p-6 rounded-lg border-l-4 border-gray-300">
+                <p class="text-gray-600 italic mb-3">"I'm a solo practitioner and was drowning in paperwork. The AI workflows for follow-ups and research are game-changers. I feel like I have an assistant now."</p>
+                <cite class="font-semibold text-gray-700 not-italic">– David T., Solo Practitioner</cite>
+              </blockquote>
+              <blockquote class="bg-gray-100 p-6 rounded-lg border-l-4 border-gray-300">
+                <p class="text-gray-600 italic mb-3">"The trainers understood the specific needs of a legal practice. The 3 months of community support helped us refine our automations for our exact case files."</p>
+                <cite class="font-semibold text-gray-700 not-italic">– Emily R., Legal Ops Manager</cite>
+              </blockquote>
+            </div>
+          </section>
+          
+          <!-- Certification Section (Original) --><section id="certification" class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover">
+            <h2 class="text-2xl font-bold mb-6 text-center md:text-left">Our Certification</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Backed by a Decade of Excellence</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our certification is more than just a piece of paper; it's a testament to a legacy of quality training that spans over 10 years. We have a proven track record of empowering professionals and organizations with cutting-edge skills.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                        <li><strong>Industry-Recognized:</strong> Validated by a decade of successful training programs.</li>
+                        <li><strong>Trusted by Leaders:</strong> Our long history has earned the trust of top corporations and government agencies.</li>
+                        <li><strong>Commitment to Quality:</strong> 10 years of refining our curriculum to meet the highest standards.</li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); overflow: hidden; border-radius: 8px; will-change: transform;">
+                      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAGscsCodTA/x7UlWhx3oQnezjiEGJqYZQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                      </iframe>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Sidebar --><aside class="lg:col-span-1 space-y-8 lg:sticky lg:top-24 self-start">
+          <!-- Outcomes Section --><div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 card-hover">
+              <h3 class="text-xl font-bold mb-4 flex items-center"><i data-lucide="rocket" class="w-6 h-6 mr-3 text-amber-500"></i>Guaranteed Outcomes</h3>
+              <ul class="space-y-3 text-gray-600">
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Save 1 Headcount:</strong> We guarantee you'll learn strategies to save the cost of 1 full-time admin staff.</span></li>
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Get 3 Ready-to-Use Workflows:</strong> Receive a zipped file with 3 AI automations for immediate use.</span></li>
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Save Time Immediately:</strong> Automate client intake, document sorting, and follow-ups.</span></li>
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Master Modern Legal Tech:</strong> Understand AI tools to make your practice more efficient.</span></li>
+              </ul>
+          </div>
+          
+          <!-- Benefits Section --><div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 card-hover">
+              <h3 class="text-xl font-bold mb-4 flex items-center"><i data-lucide="building-2" class="w-6 h-6 mr-3 text-amber-500"></i>Benefits to Your Law Firm</h3>
+              <ul class="space-y-3 text-gray-600">
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Increase Billable Hours:</strong> Free up lawyers and paralegals to focus on high-value, billable tasks.</span></li>
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Cut Down on Manual Errors:</strong> Reduce human error from repetitive data entry.</span></li>
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Streamline Client Onboarding:</strong> Create a seamless, professional experience for new clients.</span></li>
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Boost Firm Profitability:</strong> Directly impact your bottom line.</span></li>
+                  <li class="flex items-start"><i data-lucide="check" class="w-5 h-5 mr-2 text-amber-500 mt-1 flex-shrink-0"></i><span><strong>Future-Proof Your Practice:</strong> Stay ahead of the legal tech curve.</span></li>
+              </ul>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Video Testimonials Section (Original) --><section id="video-testimonials" class="mt-20">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Hear From Our Participants</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="aspect-[9/16] bg-black rounded-xl shadow-lg flex items-center justify-center card-hover overflow-hidden">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F739734685168860%2F&show_text=false&width=267&t=0" class="w-full h-full" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <div class="aspect-[9/16] bg-black rounded-xl shadow-lg flex items-center justify-center card-hover overflow-hidden">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fthelead.io%2Fvideos%2F1118334936777034%2F&show_text=false&width=267&t=0" class="w-full h-full" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+            <div class="aspect-[9/16] bg-black rounded-xl shadow-lg flex items-center justify-center card-hover overflow-hidden">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1250093550465260%2F&show_text=false&width=267&t=0" class="w-full h-full" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section (Original) --><section id="community-support" class="mt-20">
+        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">3 Months of Community Support</h2>
+          <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            
+            <!-- Image Column -->
+            <div>
+              <img src="https://www.jonathonbray.com/wp-content/uploads/2021/11/phonewhatsapp-scaled-e1636707258270.jpg" alt="Community Support" class="rounded-xl shadow-md w-full h-auto object-cover">
+            </div>
+
+            <!-- Text Column -->
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Your Learning Doesn't End Here</h3>
+              <p class="text-gray-600 mb-4">
+                Join our exclusive, private community for 3 months post-webinar. This is your space to get ongoing support, share your automation successes, and network with fellow legal tech pioneers.
+              </p>
+              <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>Get your specific questions answered by our trainers.</li>
+                  <li>See how other lawyers are implementing their workflows.</li>
+                  <li>Stay updated on the latest AI tools for the legal industry.</li>
+                  <li>Find accountability partners to help you implement your new skills.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section (Original, but modified to remove irrelevant HRDC content) --><section id="faq" class="mt-20">
+        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 card-hover">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Frequently Asked Questions</h2>
+          <div class="max-w-3xl mx-auto space-y-4" id="faq-accordion">
+
+            <div class="border-b border-gray-200 py-4">
+              <button class="accordion-header w-full flex justify-between items-center text-left text-lg font-semibold text-gray-800 hover:text-amber-600 focus:outline-none">
+                <span>Is this webinar relevant if I'm not a "tech-savvy" lawyer?</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform"></i>
+              </button>
+              <div class="accordion-content mt-2 text-gray-600">
+                <p>Absolutely. This webinar is designed *for* lawyers, not IT experts. We focus on practical, no-code tools that you can use immediately without writing a single line of code. If you can use email and Microsoft Word, you have all the skills you need to get started.</p>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 py-4">
+              <button class="accordion-header w-full flex justify-between items-center text-left text-lg font-semibold text-gray-800 hover:text-amber-600 focus:outline-none">
+                <span>Will this cover client confidentiality and data security?</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform"></i>
+              </button>
+              <div class="accordion-content mt-2 text-gray-600">
+                <p>Yes. We understand that client confidentiality is paramount. We will discuss best practices for handling sensitive data, ensuring your automations comply with professional standards and data privacy requirements.</p>
+              </div>
+            </div>
+            
+            <div class="border-b border-gray-200 py-4">
+              <button class="accordion-header w-full flex justify-between items-center text-left text-lg font-semibold text-gray-800 hover:text-amber-600 focus:outline-none">
+                <span>I'm a solo practitioner. Is this for me?</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform"></i>
+              </button>
+              <div class="accordion-content mt-2 text-gray-600">
+                <p>This is *especially* for you. Solo and small firms see the biggest return on investment by automating repetitive admin tasks. The "1 headcount saved" guarantee is designed to show you how this small investment can free up your most valuable resource: your time.</p>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 py-4">
+              <button class="accordion-header w-full flex justify-between items-center text-left text-lg font-semibold text-gray-800 hover:text-amber-600 focus:outline-none">
+                <span>How is this different from my legal practice management software?</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform"></i>
+              </button>
+              <div class="accordion-content mt-2 text-gray-600">
+                <p>Practice management software is often a closed system. Agentic automation connects *all* your tools (your email, your document storage, your calendar, public websites) and performs tasks *for* you. It's like having a universal assistant that works across all your different software.</p>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 py-4">
+              <button class="accordion-header w-full flex justify-between items-center text-left text-lg font-semibold text-gray-800 hover:text-amber-600 focus:outline-none">
+                <span>What's your training track record?</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform"></i>
+              </button>
+              <div class="accordion-content mt-2 text-gray-600">
+                <p class="mb-2">Our achievements speak for themselves:</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li><strong>10,000+ professionals trained</strong> across various industries.</li>
+                    <li>Major corporate clients including <strong>Standard Chartered, Intel, Shell, IBM,</strong> and various government agencies.</li>
+                    <li><strong>International recognition</strong> with trainers involved in national AI strategies and university advisory boards.</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="border-b border-gray-200 py-4">
+              <button class="accordion-header w-full flex justify-between items-center text-left text-lg font-semibold text-gray-800 hover:text-amber-600 focus:outline-none">
+                <span>Do I need any coding experience?</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform"></i>
+              </button>
+              <div class="accordion-content mt-2 text-gray-600">
+                <p>No programming experience is required. This webinar is specifically designed for non-coders and legal professionals. We guide you step-by-step.</p>
+              </div>
+            </div>
+
+            <div class="border-b border-gray-200 py-4">
+              <button class="accordion-header w-full flex justify-between items-center text-left text-lg font-semibold text-gray-800 hover:text-amber-600 focus:outline-none">
+                <span>How do I register?</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform"></i>
+              </button>
+              <div class="accordion-content mt-2 text-gray-600">
+                <p>Click any "Register Now" or "Book Your Seat Now" button on this page. This will take you to our registration form. You can also message us on WhatsApp.</p>
+              </div>
+            </div>
+
+             <div class="py-4">
+              <button class="accordion-header w-full flex justify-between items-center text-left text-lg font-semibold text-gray-800 hover:text-amber-600 focus:outline-none">
+                <span>Who is the training provider?</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 transition-transform transform"></i>
+              </button>
+              <div class="accordion-content mt-2 text-gray-600">
+                <p>This training is provided by Ucan Technologies Sdn. Bhd. (1207802-V) which operates TheLead.io</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer CTA --><section id="register" class="mt-20 text-center bg-gray-900 text-white rounded-xl p-10 md:p-16 shadow-2xl bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+        <div class="relative z-10">
+          <h2 class="text-4xl font-extrabold mb-4">Register Now & Automate Your Practice</h2>
+          <!-- UPDATED VALUE/PRICE MESSAGE -->
+          <p class="text-2xl text-amber-400 font-bold mb-2">
+        USD$2,000+ Value for only <span id="price-display-footer">...</span>
+          </p>
+          <p class="text-gray-400 mb-8">Includes 4-hour live training, materials, and 3 AI automation workflows.</p>
+          <a href="https://forms.gle/Vy2CzoxT5Bz8cf569" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-yellow text-gray-900 font-bold text-lg px-10 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+            Book Your Seat Now
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer --><footer class="bg-gray-900 text-gray-200">
+    <div class="container mx-auto px-6 py-8 text-center">
+      <p class="mb-4">Organized by <strong>theLead.io</strong></p>
+      <p>For inquiries: <a href="mailto:chelsea@thelead.io" class="text-amber-300 hover:text-amber-200">chelsea@thelead.io</a></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button (Fixed from original) --><a href="https://wa.me/15557074708" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all transform hover:scale-110 z-50">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.487 5.235 3.487 8.413C23.998 18.667 18.664 24 .057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.074z"/>
+      </svg>
+  </a>
+
+  <!-- Page Functionality Script --><script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // --- Mobile Menu Toggle ---
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Toggle menu icon
+      const icon = menuButton.querySelector('i');
+      if (mobileMenu.classList.contains('hidden')) {
+        icon.setAttribute('data-lucide', 'menu');
+      } else {
+        icon.setAttribute('data-lucide', 'x');
+      }
+      lucide.createIcons(); // Re-render icons
+    });
+
+    // --- Accordion Functionality ---
+    document.getElementById('faq-accordion').addEventListener('click', function (e) {
+      const header = e.target.closest('.accordion-header');
+      if (!header) return;
+
+      const content = header.nextElementSibling;
+      const icon = header.querySelector('i');
+
+      // Close all other accordions
+      document.querySelectorAll('.accordion-content').forEach((item) => {
+        if (item !== content) {
+          item.style.maxHeight = '0';
+          const otherIcon = item.previousElementSibling.querySelector('i');
+          if (otherIcon) {
+              otherIcon.classList.remove('rotate-180');
+          }
+        }
+      });
+
+      // Toggle current accordion
+      if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+        content.style.maxHeight = '0';
+        icon.classList.remove('rotate-180');
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.classList.add('rotate-180');
+      }
+    });
+
+    // --- IP-Based Pricing ---
+    async function fetchPrice() {
+      // UPDATED ID
+      const priceDisplayHeader = document.getElementById('price-display-header');
+      const priceDisplayFooter = document.getElementById('price-display-footer');
+      // UPDATED PRICE
+      const defaultPrice = "$89 USD";
+      const localPrice = "RM350";
+      const fullPriceText = `${localPrice} / ${defaultPrice}`;
+
+      // Helper to set price text
+      function setPriceText(text) {
+        // UPDATED ID
+        if (priceDisplayHeader) {
+            priceDisplayHeader.textContent = text;
+        }
+        if (priceDisplayFooter) {
+            priceDisplayFooter.textContent = text;
+        }
+      }
+
+      try {
+        // Fetch IP info
+        const response = await fetch('https://ipapi.co/json/');
+        if (!response.ok) {
+          throw new Error('IP API request failed');
+        }
+        const data = await response.json();
+        
+        // Check country code and set price
+        if (data && data.country_code === 'MY') {
+          setPriceText(localPrice);
+        } else {
+          setPriceText(defaultPrice);
+        }
+
+      } catch (error) {
+        console.error("Error fetching IP-based price:", error);
+        // Fallback if API fails or is blocked (e.g., adblocker)
+        setPriceText(fullPriceText);
+      }
+    }
+
+    // Run the pricing logic on page load
+    document.addEventListener('DOMContentLoaded', fetchPrice);
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
