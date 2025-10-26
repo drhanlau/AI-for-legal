@@ -4,28 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- SEO Meta Tags -->
-  <title>AI Agentic Automation Training for Lawyers (Online Webinar) | Save Time & Cost</title>
+  <!-- SEO Meta Tags --><title>AI Agentic Automation Training for Lawyers (Online Webinar) | Save Time & Cost</title>
   <meta name="description" content="Join our 6-hour live webinar on AI Agentic Automation for lawyers. Learn to automate your legal practice, save 5 hours per week, and transform your legal profession. Save time, cost, and hassle. Guaranteed.">
   <meta name="keywords" content="AI for lawyers, legal tech, legal automation, AI automation for legal profession, AI webinar for lawyers, law firm productivity, agentic automation, legal AI tools">
   <meta name="author" content="theLead.io">
-  <link rel="canonical" href="https://www.thelead.io/ai-for-lawyers-webinar" /> <!-- Example canonical URL -->
-
-  <!-- Open Graph / Facebook (Social Tags) -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.thelead.io/ai-for-lawyers-webinar"> <!-- Example URL -->
-  <meta property="og:title" content="AI Agentic Automation Training for Lawyers (Online Webinar)">
+  <link rel="canonical" href="https://www.thelead.io/ai-for-lawyers-webinar" /> <!-- Example canonical URL --><!-- Open Graph / Facebook (Social Tags) --><meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.thelead.io/ai-for-lawyers-webinar"> <!-- Example URL --><meta property="og:title" content="AI Agentic Automation Training for Lawyers (Online Webinar)">
   <meta property="og:description" content="Join our 6-hour live webinar to learn AI automation for the legal profession, save 5 hours per week, and reduce costs.">
-  <meta property="og:image" content="https://thelead.io/wp-content/uploads/2020/07/Web-development-illustration-1march-july-06.png"> <!-- Social sharing image -->
-
-  <!-- Twitter (Social Tags) -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://www.thelead.io/ai-for-lawyers-webinar"> <!-- Example URL -->
-  <meta property="twitter:title" content="AI Agentic Automation Training for Lawyers (Online Webinar)">
+  <meta property="og:image" content="https://thelead.io/wp-content/uploads/2020/07/Web-development-illustration-1march-july-06.png"> <!-- Social sharing image --><!-- Twitter (Social Tags) --><meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.thelead.io/ai-for-lawyers-webinar"> <!-- Example URL --><meta property="twitter:title" content="AI Agentic Automation Training for Lawyers (Online Webinar)">
   <meta property="twitter:description" content="Join our 6-hour live webinar to learn AI automation for the legal profession, save 5 hours per week, and reduce costs.">
-  <meta property="twitter:image" content="https://thelead.io/wp-content/uploads/2020/07/Web-development-illustration-1march-july-06.png"> <!-- Social sharing image -->
-
-  <!-- Favicons (from original) --><link rel="icon" href="https://thelead.io/wp-content/uploads/2020/04/cropped-lead-favicon-32x32.png" sizes="32x32" />
+  <meta property="twitter:image" content="https://thelead.io/wp-content/uploads/2020/07/Web-development-illustration-1march-july-06.png"> <!-- Social sharing image --><!-- Favicons (from original) --><link rel="icon" href="https://thelead.io/wp-content/uploads/2020/04/cropped-lead-favicon-32x32.png" sizes="32x32" />
   <link rel="icon" href="https://thelead.io/wp-content/uploads/2020/04/cropped-lead-favicon-192x192.png" sizes="192x192" />
   <link rel="apple-touch-icon" href="https://thelead.io/wp-content/uploads/2020/04/cropped-lead-favicon-192x192.png" />
 
@@ -113,9 +102,9 @@
       font-weight: 600;
       animation: scroll 20s linear infinite;
     }
-    .marquee-content span {
+    .marquee-content > span { /* Changed from .marquee-content span */
        white-space: nowrap;
-       padding: 0 2rem; /* px-8 */
+       padding: 0 1rem; /* Padding for the repeating blocks */
        flex-shrink: 0;
     }
     /* --- End of New Marquee Styles --- */
@@ -153,18 +142,15 @@
     </div>
   </nav>
 
-  <!-- Header Section -->
-  <header class="header-bg text-white pt-32 pb-20 md:pt-40 md:pb-28">
-    <!-- WebGL Canvas Background -->
-    <canvas id="webgl-bg"></canvas>
+  <!-- Header Section --><header class="header-bg text-white pt-32 pb-20 md:pt-40 md:pb-28">
+    <!-- WebGL Canvas Background --><canvas id="webgl-bg"></canvas>
     
-    <!-- Header Content (Ensure it's on top) -->
-    <div class="container mx-auto px-6 text-center relative z-10">
+    <!-- Header Content (Ensure it's on top) --><div class="container mx-auto px-6 text-center relative z-10">
       <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">
         AI Agentic Automation Training for Lawyers (Online)
       </h1>
       <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-        Saturday, 13 December (8:30am KL). A 6-Hour live webinar on AI automation for the legal profession. Save time, cost, and hassle. Learn to automate your practice and save 5 hours per week. Guaranteed.
+        <!-- This span will be updated by JavaScript --><span id="event-date-time">Saturday, 13 December (8:30am KL)</span>. A 6-Hour live webinar on AI automation for the legal profession. Save time, cost, and hassle. Learn to automate your practice and save 5 hours per week. Guaranteed.
       </p>
       <!-- ADDED VALUE MESSAGE --><p class="text-2xl font-bold text-amber-400 mb-8">
     $2,000+ Value for only <span id="price-display-header">...</span>
@@ -173,9 +159,12 @@
         <a id="reg-link-header" href="https://buy.stripe.com/fZu6oI7R76QX2VU2lI0oM1k" target="_blank" rel="noopener noreferrer" class="inline-block w-full sm:w-auto bg-gradient-yellow text-gray-900 font-bold text-lg px-10 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
           Book Your Seat Now
         </a>
+        <!-- Add to Calendar Button --><a id="add-to-calendar-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white hover:text-amber-300 transition-colors py-2 px-3 rounded-lg border border-gray-500 hover:border-amber-300">
+          <i data-lucide="calendar-plus" class="w-4 h-4"></i>
+          <span class="text-sm font-medium">Add to Calendar</span>
+        </a>
       </div>
-      <!-- Added Social Proof -->
-      <div class="mt-4 flex items-center justify-center space-x-1 text-amber-400">
+      <!-- Added Social Proof --><div class="mt-4 flex items-center justify-center space-x-1 text-amber-400">
         <i data-lucide="star" class="w-5 h-5 fill-current"></i>
         <i data-lucide="star" class="w-5 h-5 fill-current"></i>
         <i data-lucide="star" class="w-5 h-5 fill-current"></i>
@@ -188,10 +177,10 @@
   
   <!-- New Moving Ribbon --><div class="marquee-container">
     <div class="marquee-content">
-      <span>Limited seats only, Early bird is RM550 for first 100 tickets.</span>
-      <span>Limited seats only, Early bird is RM550 for first 100 tickets. </span>
-      <!-- Add duplicates for seamless loop --><span>Limited seats only, Early bird is RM550 for first 100 tickets. </span>
-      <span>Limited seats only, Early bird is RM550 for first 100 tickets.</span>
+      <span class="marquee-text-block">Limited seats only, Early bird is <span class="marquee-price">RM550</span> for first 100 tickets.</span>
+      <span class="marquee-text-block">Limited seats only, Early bird is <span class="marquee-price">RM550</span> for first 100 tickets.</span>
+      <!-- Add duplicates for seamless loop --><span class="marquee-text-block">Limited seats only, Early bird is <span class="marquee-price">RM550</span> for first 100 tickets.</span>
+      <span class="marquee-text-block">Limited seats only, Early bird is <span class="marquee-price">RM550</span> for first 100 tickets.</span>
     </div>
   </div>
   
@@ -528,6 +517,10 @@
           <a id="reg-link-footer" href="https." target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-yellow text-gray-900 font-bold text-lg px-10 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
             Book Your Seat Now
           </a>
+          <!-- Add to Calendar Button (Footer) --><a id="add-to-calendar-link-footer" href="#" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-white hover:text-amber-300 transition-colors py-2 px-3 rounded-lg border border-gray-500 hover:border-amber-300">
+            <i data-lucide="calendar-plus" class="w-4 h-4"></i>
+            <span class="text-sm font-medium">Add to Calendar</span>
+          </a>
         </div>
       </section>
 
@@ -600,6 +593,7 @@
       // Get price display elements
       const priceDisplayHeader = document.getElementById('price-display-header');
       const priceDisplayFooter = document.getElementById('price-display-footer');
+      const marqueePriceElements = document.querySelectorAll('.marquee-price');
       
       // Get all registration links
       const allLinks = [
@@ -635,6 +629,11 @@
               }
           });
       }
+      
+      // Helper to set marquee prices
+      function setMarqueePrices(text) {
+          marqueePriceElements.forEach(el => el.textContent = text);
+      }
 
       try {
         // Fetch IP info
@@ -648,9 +647,11 @@
         if (data && data.country_code === 'MY') {
           setPriceText(localPrice);
           setLinkHrefs(localLink);
+          setMarqueePrices(localPrice); // Set marquee to local price
         } else {
           setPriceText(defaultPrice);
-          setLinkHrefs(defaultLink); // This is already the default, but good for clarity
+          setLinkHrefs(defaultLink); 
+          setMarqueePrices(defaultPrice); // Set marquee to default price
         }
 
       } catch (error) {
@@ -658,12 +659,89 @@
         // Fallback if API fails or is blocked (e.g., adblocker)
         setPriceText(fullPriceText);
         setLinkHrefs(defaultLink); // Fallback to default link
+        setMarqueePrices(fullPriceText); // Fallback marquee to full text
       }
     }
 
-    // Run functions on page load
+    // --- Local Event Time ---
+    function displayLocalEventTime() {
+        const dateTimeSpan = document.getElementById('event-date-time');
+        if (!dateTimeSpan) return;
+
+        // Event time: Saturday, 13 December 2025, 08:30:00 (GMT+08:00)
+        // Using 2025 as it's the next year where Dec 13 is a Saturday.
+        try {
+            const eventDate = new Date('2025-12-13T08:30:00+08:00');
+
+            // Check if date is valid
+            if (isNaN(eventDate.getTime())) {
+                throw new Error('Invalid date object');
+            }
+
+            // Format: "Saturday, December 13, 8:30 AM (PST)"
+            const options = {
+                weekday: 'long',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                timeZoneName: 'short'
+            };
+            
+            const localString = eventDate.toLocaleString(undefined, options); // 'undefined' uses browser's locale
+            dateTimeSpan.textContent = localString;
+
+        } catch (e) {
+            console.error("Error formatting event time:", e);
+            // If it fails, the default "Saturday, 13 December (8:30am KL)" text will remain.
+        }
+    }
+    
+    // --- Google Calendar Link Generator ---
+    function generateCalendarLink() {
+        const title = "AI Agentic Automation Training for Lawyers (Online)";
+        // Use the meta description for details
+        const details = "Join our 6-hour live webinar on AI Agentic Automation for lawyers. Learn to automate your legal practice, save 5 hours per week, and transform your legal profession. Save time, cost, and hassle. Guaranteed.";
+        const location = "Online Webinar";
+        
+        // Event time: 2025-12-13 08:30 KL (GMT+8) for 6 hours
+        const eventStartDate = new Date('2025-12-13T08:30:00+08:00');
+        const eventEndDate = new Date('2025-12-13T14:30:00+08:00'); // 6 hours later
+
+        // Format for Google Calendar (YYYYMMDDTHHMMSSZ)
+        // Converts date to UTC and formats it
+        const toGoogleCalFormat = (date) => date.toISOString().replace(/-|:|\.\d{3}/g, '');
+        
+        const startDateUTC = toGoogleCalFormat(eventStartDate);
+        const endDateUTC = toGoogleCalFormat(eventEndDate);
+        
+        const googleCalLink = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDateUTC}/${endDateUTC}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
+        
+        return googleCalLink;
+    }
+
+
+    // --- Run functions on page load ---
     document.addEventListener('DOMContentLoaded', () => {
         fetchPrice();
+        displayLocalEventTime();
+        
+        // Set calendar links
+        try {
+            const calLink = generateCalendarLink();
+            const headerCalButton = document.getElementById('add-to-calendar-link');
+            const footerCalButton = document.getElementById('add-to-calendar-link-footer');
+            
+            if (headerCalButton) {
+                headerCalButton.href = calLink;
+            }
+            if (footerCalButton) {
+                footerCalButton.href = calLink;
+            }
+        } catch (e) {
+            console.error("Error generating calendar link:", e);
+        }
+        
         // Only init WebGL if THREE is loaded
         if (typeof THREE !== 'undefined') {
             initWebGLBackground(); // Initialize the WebGL background
@@ -802,4 +880,5 @@
 
 </body>
 </html>
+
 
