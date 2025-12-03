@@ -188,10 +188,6 @@
         <a id="reg-link-header" href="https://buy.stripe.com/fZu6oI7R76QX2VU2lI0oM1k" target="_blank" rel="noopener noreferrer" class="inline-block w-full sm:w-auto bg-gradient-yellow text-gray-900 font-bold text-lg px-10 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
           Book Your Seat Now
         </a>
-        <!-- Add to Calendar Button --><a id="add-to-calendar-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white hover:text-amber-300 transition-colors py-2 px-3 rounded-lg border border-gray-500 hover:border-amber-300">
-          <i data-lucide="calendar-plus" class="w-4 h-4"></i>
-          <span class="text-sm font-medium">Add to Calendar</span>
-        </a>
       </div>
       <!-- Added Social Proof --><div class="mt-4 flex items-center justify-center space-x-1 text-amber-400">
         <i data-lucide="star" class="w-5 h-5 fill-current"></i>
@@ -542,10 +538,6 @@
           <a id="reg-link-footer" href="https://buy.stripe.com/fZu6oI7R76QX2VU2lI0oM1k" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-yellow text-gray-900 font-bold text-lg px-10 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
             Book Your Seat Now
           </a>
-          <!-- Add to Calendar Button (Footer) --><a id="add-to-calendar-link-footer" href="#" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-white hover:text-amber-300 transition-colors py-2 px-3 rounded-lg border border-gray-500 hover:border-amber-300">
-            <i data-lucide="calendar-plus" class="w-4 h-4"></i>
-            <span class="text-sm font-medium">Add to Calendar</span>
-          </a>
         </div>
       </section>
 
@@ -726,50 +718,10 @@
         }
     }
     
-    // --- Google Calendar Link Generator ---
-    function generateCalendarLink() {
-        const title = "AI Agentic Automation Training for Lawyers (Online)";
-        // Use the meta description for details
-        const details = "Join our 6-hour live webinar on AI Agentic Automation for lawyers. Learn to automate your legal practice, save 5 hours per week, and transform your legal profession. Save time, cost, and hassle. Guaranteed.";
-        const location = "Online Webinar";
-        
-        // Event time: 2025-12-13 08:30 KL (GMT+8) for 6 hours
-        const eventStartDate = new Date('2025-12-13T08:30:00+08:00');
-        const eventEndDate = new Date('2025-12-13T14:30:00+08:00'); // 6 hours later
-
-        // Format for Google Calendar (YYYYMMDDTHHMMSSZ)
-        // Converts date to UTC and formats it
-        const toGoogleCalFormat = (date) => date.toISOString().replace(/-|:|\.\d{3}/g, '');
-        
-        const startDateUTC = toGoogleCalFormat(eventStartDate);
-        const endDateUTC = toGoogleCalFormat(eventEndDate);
-        
-        const googleCalLink = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDateUTC}/${endDateUTC}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
-        
-        return googleCalLink;
-    }
-
-
     // --- Run functions on page load ---
     document.addEventListener('DOMContentLoaded', () => {
         fetchPrice();
         displayLocalEventTime();
-        
-        // Set calendar links
-        try {
-            const calLink = generateCalendarLink();
-            const headerCalButton = document.getElementById('add-to-calendar-link');
-            const footerCalButton = document.getElementById('add-to-calendar-link-footer');
-            
-            if (headerCalButton) {
-                headerCalButton.href = calLink;
-            }
-            if (footerCalButton) {
-                footerCalButton.href = calLink;
-            }
-        } catch (e) {
-            console.error("Error generating calendar link:", e);
-        }
         
         // Only init WebGL if THREE is loaded
         if (typeof THREE !== 'undefined') {
